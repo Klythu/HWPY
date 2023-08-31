@@ -27,9 +27,9 @@ sum=int(input("сумма чисел "))
 multy=int(input("произведение чисел "))
 candidats=All_divide(multy)
 flag=0
-for i in range(0,len(candidats)-1):
+for i in range(0,len(candidats)):
      secondCandidat=sum-candidats[i]
-     for j in range(0,len(candidats)-1):
+     for j in range(0,len(candidats)):
           if secondCandidat==candidats[j]:
                print(secondCandidat," ",candidats[i])
                flag=1
